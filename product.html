@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>STV - Карточка товара</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/main.min.css">
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<div class="row align-items-center d-none d-lg-flex">
+					<div class="col">
+						<nav class="header__nav">
+							<a href="#">Главная</a>
+							<a href="#">О компании</a>
+							<a href="#">Вакансии</a>
+							<a href="#">Новости</a>
+							<a href="#">Услуги</a>
+							<a href="#">Товары</a>
+							<a href="#">Прайс лист</a>
+							<a href="#">Производство</a>
+							<a href="#">Паллеты</a>
+							<a href="#">Контакты</a>
+						</nav>
+					</div>
+					<div class="col-auto">
+						<div class="d-flex align-items-center">
+							<label for="header__lang" class="px-2 m-0">Рус</label>
+							<div class="checkbox checkbox--style-switch">
+								<input type="checkbox" name="lang" id="header__lang">
+								<div></div>
+							</div>
+							<label for="header__lang" class="px-2 m-0">Укр</label>
+						</div>
+					</div>
+					<div class="col-auto d-none d-xl-block">
+						<div class="btn"><img src="img/icons/user.svg" alt="User icon"> Войти</div>
+					</div>
+				</div>
+				<div class="row align-items-center mt-lg-3 mt-xl-2">
+					<div class="col-auto col-xl-1 mr-auto mr-sm-0">
+						<a href="/"><img src="img/logo.png" alt="STV logo"></a>
+					</div>
+					<div class="col col-xl-4 mr-auto d-none d-md-block">
+						<div class="input">
+							<button><img src="img/icons/search.svg" alt="Search icon"></button>
+							<input type="search" placeholder="Введите наименование или код">
+						</div>
+					</div>
+					<div class="col-auto mr-auto mr-md-0 d-none d-sm-block">
+						<div class="dropdown">
+							<a class="dropdown-toggle" href="#" role="button" id="dropdown-phones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>+38 (067) 400 78 73</span></a>
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-phones">
+								<a href="tel:38-067-400-78-73" class="dropdown-item">+38 (067) 400 78 73</a>
+								<a href="tel:38-067-400-78-73" class="dropdown-item">+38 (067) 400 78 73</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-auto d-none d-lg-block">
+						<a href="#modal-call" data-toggle="modal" class="btn btn-primary">Заказать звонок</a>
+					</div>
+					<div class="col-auto d-flex justify-content-end">
+						<div class="dropdown">
+							<a class="btn dropdown-toggle" href="#" role="button" id="dropdown-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/icons/cart.svg" alt="Cart icon"> 0</a>
+							<div class="dropdown-menu dropdown-menu-right p-3" aria-labelledby="dropdown-cart">
+								<ul class="dropdown__list">
+									<li>
+										<a href="#" class="dropdown__image" style="background-image: url(img/item.png);"></a>
+										<div class="dropdown__header">
+											<b>Полоса 20х4 мм</b>
+											<p>1 кг, 283.00грн</p>
+										</div>
+										<div class="text-right ml-auto">
+											<div class="dropdown__price">283.00 грн</div>
+											<a href="#" class="link">Удалить</a>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="dropdown__image" style="background-image: url(img/item.png);"></a>
+										<div class="dropdown__header">
+											<b>Полоса 20х4 мм Полоса 20х4 мм Полоса 20х4 мм</b>
+											<p>1 кг, 283.00грн</p>
+										</div>
+										<div class="text-right ml-auto">
+											<div class="dropdown__price">283.00 грн</div>
+											<a href="#" class="link">Удалить</a>
+										</div>
+									</li>
+								</ul>
+								<a href="#" class="btn btn-primary mt-2 w-100">Оформить заказ</a>
+								<!-- <div class="dropdown__empty">
+									<img src="img/icons/cart-empty.svg" alt="Cart empty icon"> Ваша корзина пуста
+								</div> -->
+							</div>
+						</div>
+						<div class="dropdown d-xl-none">
+							<a class="btn dropdown-toggle" href="#" role="button" id="dropdown-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/icons/menu.svg" alt="Menu icon" class="mr-0"></a>
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-menu">
+								<div class="p-3 d-md-none">
+									<div class="input" style="width: 240px;">
+										<button><img src="img/icons/search.svg" alt="Search icon"></button>
+										<input type="search" placeholder="Введите наименование или код">
+									</div>
+								</div>
+								<div class="dropdown-divider d-sm-none"></div>
+								<a href="tel:38-067-400-78-73" class="dropdown-item d-sm-none">+38 (067) 400 78 73</a>
+								<a href="tel:38-067-400-78-73" class="dropdown-item d-sm-none">+38 (067) 400 78 73</a>
+								<div class="dropdown-divider d-md-none"></div>
+								<a href="#" class="dropdown-item d-lg-none">О компании</a>
+								<a href="#" class="dropdown-item d-lg-none">Вакансии</a>
+								<a href="#" class="dropdown-item d-lg-none">Новости</a>
+								<a href="#" class="dropdown-item d-lg-none">Услуги</a>
+								<a href="#" class="dropdown-item d-lg-none">Товары</a>
+								<a href="#" class="dropdown-item d-lg-none">Прайс лист</a>
+								<a href="#" class="dropdown-item d-lg-none">Производство</a>
+								<a href="#" class="dropdown-item d-lg-none">Паллеты</a>
+								<a href="#" class="dropdown-item d-lg-none">Контакты</a>
+								<div class="dropdown-divider d-lg-none"></div>
+								<a href="#" class="dropdown-item">Войти</a>
+								<div class="dropdown-divider d-lg-none"></div>
+								<a href="#" class="dropdown-item d-lg-none">Укр</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- subheader -->
+		<section class="subheader">
+			<div class="container">
+				<div class="subheader__title">Полоса 20х4 мм</div>
+				<div class="breadcrumbs">
+					<a href="#">Главная</a><a href="#">Металл</a><span>Металева 2984</span>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section product flex-grow-1 py-4 section--bg-grey">
+			<div class="container">
+				<div class="product__block">
+					<div class="row no-gutters">
+						<div class="col-md-7 col-lg-5">
+							<div id="slider-product" class="product__slider">
+								<div style="background-image: url(img/item.png);"></div>
+								<div style="background-image: url(img/news.png);"></div>
+								<div style="background-image: url(img/item.png);"></div>
+							</div>
+							<div id="slider-product-thumbs" class="product__thumbs">
+								<div style="background-image: url(img/item.png);"></div>
+								<div style="background-image: url(img/news.png);"></div>
+								<div style="background-image: url(img/item.png);"></div>
+							</div>
+						</div>
+						<div class="col p-lg-4 border-left mt-4 mt-lg-0 order-md-1">
+							<div class="badge">Код товара: 2341</div>
+							<div class="text-success mt-3">Наличие: В наличии</div>
+							<div class="product__price mt-5">283 грн/кг</div>
+							<div class="d-flex mt-3">
+								<div class="w-100">
+									<label>кг</label>
+									<input type="number" value="1">
+								</div>
+								<div class="w-100 ml-2">
+									<label>грн</label>
+									<input type="number" value="283">
+								</div>
+							</div>
+							<button class="btn btn-primary w-100 mt-3"><img src="img/icons/cart.svg" alt="Cart icon"> Купить</button>
+						</div>
+						<div class="col-md-5 col-lg-3 p-md-4 mt-4 mt-md-0">
+							<ul class="product__list">
+								<li class="mb-4">Производитель: Польша</li>
+								<li>Потужність: 310 Вт</li>
+								<li>Діаметр диска: 125 мм</li>
+								<li>Гарантія: 36 міс.</li>
+							</ul>
+							<a href="#product-specifications" class="link">Все характеристики</a>
+							<div class="mt-4 d-flex flex-column align-items-start">
+								<a href="#" class="link my-1">Нашли дешевле?</a>
+								<a href="#" class="link my-1">Условия возврата <img src="img/icons/refresh.svg" alt="Refresh icon"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product__block" id="product-specifications">
+					<ul class="nav nav-tabs" id="product-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="specifications-tab" data-toggle="tab" href="#specifications" role="tab" aria-controls="specifications" aria-selected="true">Все характеристики</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="vkladka-tab" data-toggle="tab" href="#vkladka" role="tab" aria-controls="vkladka" aria-selected="false">Вкладка</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="product-tab-content">
+						<div class="tab-pane fade show active" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+							<div class="row justify-content-center">
+								<div class="col-lg-10">
+									<div class="h2 mb-4">Основные характеристики</div>
+									<table class="table table-striped">
+										<tbody>
+											<tr>
+												<td>Lorem ipsum dolor</td>
+												<td>283 грн/кг</td>
+											</tr>
+											<tr>
+												<td>sit amet, consectetur adipiscing</td>
+												<td>580</td>
+											</tr>
+											<tr>
+												<td>elit, sed do eiusmod tempor incididunt</td>
+												<td>2760</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="h2 mt-5 mb-4">Дополнительное описание</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="vkladka" role="tabpanel" aria-labelledby="vkladka-tab">
+							<div class="row justify-content-center">
+								<div class="col-lg-10">
+									Вкладка
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product__block">
+					<div class="h2">Похожие товары</div>
+					<div class="row mt-4">
+						<div class="col-sm-6 col-xl-3 mb-4">
+							<div class="catalog__item">
+								<a href="#" class="catalog__image" style="background-image: url(img/item.png);"></a>
+								<div class="catalog__content">
+									<div class="catalog__title">Канат д.20,0 мм ГОСТ 7668-80 (6х36+1о.с.)</div>
+									<div class="catalog__price">283 грн/шт.</div>
+									<ul class="catalog__description">
+										<li>Бренд: Blogso</li>
+										<li>Материал: Алюминий</li>
+										<li>Страна производитель: Китай</li>
+									</ul>
+									<div class="position-relative mt-auto">
+										<a href="#" class="catalog__cart btn btn-primary w-100"><img src="img/icons/cart.svg" alt="Cart icon"> Купить</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-3 mb-4">
+							<div class="catalog__item">
+								<a href="#" class="catalog__image" style="background-image: url(img/item.png);"></a>
+								<div class="catalog__content">
+									<div class="catalog__title">Канат д.20,0 мм ГОСТ 7668-80 (6х36+1о.с.)</div>
+									<div class="catalog__price">283 грн/шт.</div>
+									<ul class="catalog__description">
+										<li>Бренд: Blogso</li>
+										<li>Материал: Алюминий</li>
+										<li>Страна производитель: Китай</li>
+									</ul>
+									<div class="position-relative mt-auto">
+										<a href="#" class="catalog__cart btn btn-primary w-100"><img src="img/icons/cart.svg" alt="Cart icon"> Купить</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-3 mb-4">
+							<div class="catalog__item">
+								<a href="#" class="catalog__image" style="background-image: url(img/item.png);"></a>
+								<div class="catalog__content">
+									<div class="catalog__title">Канат д.20,0 мм ГОСТ 7668-80 (6х36+1о.с.)</div>
+									<div class="catalog__price">283 грн/шт.</div>
+									<ul class="catalog__description">
+										<li>Бренд: Blogso</li>
+										<li>Материал: Алюминий</li>
+										<li>Страна производитель: Китай</li>
+									</ul>
+									<div class="position-relative mt-auto">
+										<a href="#" class="catalog__cart btn btn-primary w-100"><img src="img/icons/cart.svg" alt="Cart icon"> Купить</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-3 mb-4">
+							<div class="catalog__item">
+								<a href="#" class="catalog__image" style="background-image: url(img/item.png);"></a>
+								<div class="catalog__content">
+									<div class="catalog__title">Канат д.20,0 мм ГОСТ 7668-80 (6х36+1о.с.)</div>
+									<div class="catalog__price">283 грн/шт.</div>
+									<ul class="catalog__description">
+										<li>Бренд: Blogso</li>
+										<li>Материал: Алюминий</li>
+										<li>Страна производитель: Китай</li>
+									</ul>
+									<div class="position-relative mt-auto">
+										<a href="#" class="catalog__cart btn btn-primary w-100"><img src="img/icons/cart.svg" alt="Cart icon"> Купить</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col">
+						<div class="d-flex align-items-center">
+							<img src="img/logo.png" alt="STV logo">
+							<div class="d-flex flex-column align-items-start ml-4">
+								<a href="mailto:nfo@stv.com.ua" class="my-1">nfo@stv.com.ua</a>
+								<a href="tel:38-067-400-78-73" class="my-1">+38 (067) 400 78 73</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-auto col-md text-md-center mt-3 mt-sm-0">
+						<a href="#" class="btn btn-grey">Скачать прайслист</a>
+					</div>
+					<div class="col-md text-sm-right mt-3 mt-md-0">
+						<span>02099 г.Чернигов Улица Название ул.</span>
+					</div>
+				</div>
+				<div class="row justify-content-between mt-4">
+					<div class="col-sm-auto">
+						<span>© 2020 STV. All rights reserved.</span>
+					</div>
+					<div class="col-sm-auto mt-2 mt-sm-0">
+						<span>Содано в <a href="https://naviart.com.ua" target="_blank">Naviart</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- modal -->
+		<div class="modal fade" id="modal-call" tabindex="-1" role="dialog" aria-labelledby="modal-call-label" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title m-0" id="modal-call-label">Заказать звонок</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="input mb-2">
+							<label>Ваше имя</label>
+							<input type="text" placeholder="Анатолий">
+						</div>
+						<div class="input mb-2">
+							<label>Ваш телефон</label>
+							<input type="tel" placeholder="+380 (XX) XXX-XX-XX">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary w-100">Отправить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/scripts.min.js"></script>
+		<script src="js/common.min.js"></script>
+		<script>
+			$('#slider-product').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				fade: true,
+				asNavFor: '#slider-product-thumbs'
+			});
+			$('#slider-product-thumbs').slick({
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				asNavFor: '#slider-product',
+				focusOnSelect: true
+			});
+		</script>
+	</body>
+</html>
